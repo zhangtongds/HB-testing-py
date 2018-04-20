@@ -20,7 +20,10 @@ class PartyTests(unittest.TestCase):
         self.assertIn("having a party", result.data)
 
     def test_no_rsvp_yet(self):
-        """Do users who haven't RSVPed see the correct view?"""
+        """Do users who haven't RSVPed see the correct view?
+        >>> test_no_rsvp_yet()
+        redirect("/")
+        """
 
         # FIXME: Add a test to show we haven't RSVP'd yet
         print "FIXME"
